@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".admin.OrderAdminAcceptActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:layout_gravity="center"
+            android:background="@drawable/white_bg2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/intel"
+                android:gravity="center"
+                android:text="Đơn hàng"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnSetting"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/settings_heart_icon" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="435dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/grey_bg"
+                android:iconifiedByDefault="false"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSetting"
+                app:searchIcon="@drawable/search_iconnnn" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+                <TextView
+                    android:id="@+id/btnHistory"
+                    android:layout_width="96dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="6dp"
+                    android:gravity="center"
+                    android:text="Lịch sử"
+                    android:textColor="#767676"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btnNew"
+                    android:layout_width="104dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="17dp"
+                    android:gravity="center"
+                    android:text="Mới"
+                    android:textColor="#767676"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/btnAccept"
+                    android:layout_width="135dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="37dp"
+                    android:gravity="center"
+                    android:text="Đã xác nhận"
+                    android:textColor="#E48E8E"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/btnHistory"
+                    app:layout_constraintStart_toEndOf="@+id/btnNew"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="180dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginEnd="130dp"
+                    android:background="#D72929"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnAccept" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="685dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="7dp"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always"
+                android:scrollbars="vertical"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/BottomNavViewAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:itemActiveIndicatorStyle="@style/TransparentActiveIndicator"
+                app:itemHorizontalTranslationEnabled="false"
+                app:itemIconSize="35dp"
+                app:itemIconTint="@color/bottom_nav_color"
+                app:itemRippleColor="#00000000"
+                app:itemTextAppearanceActive="@style/BottomNavTextStyle"
+                app:itemTextAppearanceInactive="@style/BottomNavTextStyle"
+                app:itemTextColor="#828282"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/bottom_nav_menu_admin"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

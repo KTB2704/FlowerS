@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_white">#D6D6D6</color>
+    <color name="pastel">#D7CCC8</color>
+    <color name="nav">#76767694</color>
+    <color name="pink_color">#DAB4B1</color>
+    <color name="pink_bg">#CA9C96</color>
+    <color name="pink">#FCE4EC</color>
+    <color name="pending">#E48E8E</color>
+    <color name="cancel">#D72929</color>
+    <color name="delivery">#90DEDA</color>
+    <color name="success">#90DEA1</color>
+    <color name="accept">#283997</color>
+</resources>

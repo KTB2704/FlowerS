@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlowerS"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin.ProfileAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddFlowerAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProductInfoAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProductFlowerAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.CancelUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.SuccessUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.DeliveryUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.PendingUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.OrderAdminHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.OrderAdminAcceptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.NoficationAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.OrderAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.FlowerDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ProfileUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.NoficationUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.SearchUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.WidgetUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

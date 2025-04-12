@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlowerS</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="terms_text">By clicking continue, you agree to our <b>Terms of Service</b> and <b>Privacy Policy</b></string>
+</resources>

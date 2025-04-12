@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_admin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/itim"
+                android:text="FlowerS"
+                android:textColor="#E48E8E"
+                android:textSize="80sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/btnSetting"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/settings_heart_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/white_bg">
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/white_bg5"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/cottage_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="26dp"
+                    android:background="@drawable/white_bg5"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sync_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginBottom="52dp"
+                    android:background="@drawable/white_bg5"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/contact_support_icon" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="46dp"
+                    android:background="@drawable/white_bg5"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView19"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star_icon3" />
+
+                <ImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/white_bg5"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/list_alt_icon" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Tồn kho"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="82dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Danh sách sản phẩm"
+                    app:layout_constraintStart_toEndOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/imgProduct" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="54dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Thu chi"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="69dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Trung tâm trợ giúp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Đánh giá"
+                    app:layout_constraintStart_toEndOf="@+id/textView39"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:background="@drawable/white_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/search_img2" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="220dp"
+                        android:layout_height="78dp"
+                        android:fontFamily="@font/greatvibes"
+                        android:text="Chào tháng 8"
+                        android:textColor="@color/white"
+                        android:textSize="50dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="171dp"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/greatvibes"
+                        android:text="FlowerS"
+                        android:textColor="@color/white"
+                        android:textSize="37dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="197dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="248dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="14dp"
+                        android:lineSpacingExtra="8dp"
+                        android:text="Hoa trong ngày 14/2 là biểu tượng của tình yêu và sự lãng mạn. Hoa hồng đỏ phổ biến nhất, tượng trưng cho tình yêu nồng cháy..."
+                        android:textColor="#FFB6C1"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="25dp"
+                        android:text="14/2- Valentine Ngọt Ngào"
+                        android:textColor="#E48E8E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="24dp"
+                        android:text="9/2/2025"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/grey_bg"
+                        app:layout_constraintBottom_toTopOf="@+id/textView50"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="138dp"
+                        android:layout_height="138dp"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/white_bg"
+                        android:clipToOutline="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView48"
+                        android:src="@drawable/saleimg2"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="3dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="264dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingExtra="8dp"
+                        android:text="Hoa 8/3 là món quà nhỏ nhưng chứa đựng ý nghĩa lớn, thể hiện sự yêu thương, trân trọng và biết ơn....."
+                        android:textColor="#FFB6C1"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="21dp"
+                        android:text="8/3- Nâng tầm yêu thương"
+                        android:textColor="#E48E8E"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="246dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="104dp"
+                        android:layout_marginTop="6dp"
+                        android:text="Chương trình khuyến mãi"
+                        android:textColor="#B2B2B2"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="5/3/2025"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="138dp"
+                        android:layout_height="138dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="5dp"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/white_bg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView45"
+                        android:src="@drawable/saleimg1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/BottomNavViewAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="@color/white"
+                app:itemActiveIndicatorStyle="@style/TransparentActiveIndicator"
+                app:itemHorizontalTranslationEnabled="false"
+                app:itemIconSize="35dp"
+                app:itemIconTint="@color/bottom_nav_color"
+                app:itemRippleColor="#00000000"
+                app:itemTextAppearanceActive="@style/BottomNavTextStyle"
+                app:itemTextAppearanceInactive="@style/BottomNavTextStyle"
+                app:itemTextColor="#828282"
+                app:labelVisibilityMode="labeled"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/bottom_nav_menu_admin"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

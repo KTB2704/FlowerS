@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_order"
+        android:icon="@drawable/format_list"
+        android:title="Đơn hàng"/>
+    <item
+        android:id="@+id/nav_nofi"
+        android:icon="@drawable/nofi_icon"
+        android:title="Thông báo"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="Trang chủ"/>
+
+</menu>
